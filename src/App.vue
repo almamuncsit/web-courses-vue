@@ -1,7 +1,7 @@
 <template>
   <div>
-      <app-header></app-header>
-      <router-view></router-view>
+      <app-header/>
+      <router-view/>
       <app-footer></app-footer>
   </div>
 </template>
@@ -13,11 +13,6 @@ export default {
   components: {
     appHeader: Header,
     appFooter: Footer
-  },
-  data() {
-    return {
-      msg: "Welcome to Your Vue.js App"
-    };
   }
 };
 </script>

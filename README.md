@@ -1,21 +1,33 @@
-# WebCourses
-A Vue js application for online course
+# Web Courses Vue Client
+
+This is a Vue js application for online course. 
 
 [![GitHub Fork](https://img.shields.io/github/forks/almamuncsit/web-courses-vue.svg)](https://github.com/almamuncsit/web-courses-vue)
 [![GitHub Stars](https://img.shields.io/github/stars/almamuncsit/web-courses-vue.svg)](https://github.com/almamuncsit/web-courses-vue/stargazers)
 [![GitHub license](https://img.shields.io/github/license/almamuncsit/web-courses-vue.svg)](https://github.com/almamuncsit/web-courses-vue/master/LICENSE)
+
+## Plugins are used to develop this application
+
+* Vue Reouter
+* Vuex
+* Vue Resource
+
 ## Installtion 
+
 ##### Clone the repository
+
 ```
 git clone https://github.com/almamuncsit/web-courses-vue.git
 ```
 
 #### Go to project folder
+
 ```
 cd web-courses-vue
 ```
 
 ##### Install node dependency
+
 ```
 npm install 
 ```
@@ -25,6 +37,7 @@ npm install
 ``` 
 npm run serve
 ```
+
 ##### Now open localhost on 8000 port
 
 ``` 

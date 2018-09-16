@@ -1,14 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Home from './views/Home.vue'
 
 // Import components
 import Home from './components/Home.vue'
 import Login from './components/auth/Login.vue'
 import Registration from './components/auth/Registration.vue'
-import CourseList from './components/courses/CourseList.vue'
-import SingleCourse from './components/courses/SingleCourse.vue'
-import ShowLesson from './components/courses/ShowLesson.vue'
 
 Vue.use(Router)
 
@@ -40,12 +36,12 @@ export default new Router({
     {
       path: '/courses',
       name: 'coureses',
-      component: CourseList
+      component: () => import('./components/courses/CourseList.vue'),
     },
     {
       path: '/course/:id',
       name: 'singleCourse',
-      component: SingleCourse,
+      component: () => import('./components/courses/SingleCourse.vue'),
       meta: {
         forAuth: true
       }
@@ -53,18 +49,10 @@ export default new Router({
     {
       path: '/lessons/:id',
       name: 'singleLession',
-      component: ShowLesson,
+      component: () => import('./components/courses/ShowLesson.vue'),
       meta: {
         forAuth: true
       }
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]
 })

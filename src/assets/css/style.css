@@ -1,0 +1,274 @@
+body {
+  background-color: #efefef !important;
+}
+
+.br0 {
+  border-radius: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.course-lesson {
+  padding-top: 15px;
+}
+
+.sidebar {
+  /* background-color: #f7f7f7; */
+  /* min-height: 700px; */
+  padding: 3px 7px 30px 0px;
+  overflow: auto;
+  width: 100%;
+}
+
+.course-section {
+  border: 1px solid #ddd;
+  margin-bottom: 9px;
+}
+
+.sec-title {
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 34px;
+  width: 100%;
+  font-family: "Roboto Slab",
+    serif;
+  color: rgba(82, 82, 82, 0.87);
+  border-bottom: 1px solid rgb(0, 166, 90);
+}
+
+.course-section h3 {
+  background: #e8e8e8;
+  padding: 10px 16px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.course-section h3 a {
+  color: #333;
+}
+
+.course-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.course-section ul li {
+  list-style-type: none;
+}
+
+.course-section ul li a {
+  display: block;
+  padding: 9px;
+  border-bottom: 1px solid #ebebeb;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.course-section ul li a:hover {
+  color: #167b72;
+  background: #d7ebe9;
+}
+
+.lesson {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.lesson-text {
+  border-left: 2px solid #ccc;
+}
+
+.active-lesson {
+  color: #167b72 !important;
+  background: #d7ebe9;
+}
+
+.main-content {
+  min-height: 400px;
+  overflow: auto;
+}
+
+.main-content h1 {
+  font-size: 27px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  color: rgba(82, 82, 82, 0.87);
+  border-bottom: 1px solid rgb(0, 166, 90);
+}
+
+.previous-next {
+  display: block;
+  padding: 20px 0;
+}
+
+.description {
+  padding: 30px 0px 45px 0px;
+}
+
+.comment {
+  padding-bottom: 50px;
+}
+
+/*Single Course*/
+.course-description {
+  text-align: left !important;
+}
+
+.course-description img {
+  float: left;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.share_post {
+  padding: 10px;
+}
+
+.share_post ul {
+  list-style: outside none none;
+  padding-left: 0;
+}
+
+.share_post li {
+  display: inline-block;
+  padding-right: 1px;
+}
+
+.share_post li a {
+  background: #0071bc none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  height: 32px;
+  padding-top: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out 0s;
+  width: 32px;
+}
+
+.facebook {
+  background: #3b5998 !important;
+}
+
+.twitter {
+  background: #00aced !important;
+}
+
+.googleplus {
+  background: #dd4b39 !important;
+}
+
+.pinterest {
+  background: #cb2027 !important;
+}
+
+.linkedin {
+  background: #007bb6 !important;
+}
+
+/*******************************************
+// Start coding for Login and register page
+********************************************/
+
+div#LoginForm {
+  /* background-image: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); */
+  background: #efefef;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+.form-heading {
+  color: #fff;
+  font-size: 23px;
+}
+
+.panel h2 {
+  color: #444444;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.panel p {
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 50px 70px 70px 71px;
+}
+
+.login-form .form-group {
+  margin-bottom: 10px;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.login-form .btn.btn-primary {
+  background: #f0ad4e none repeat scroll 0 0;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+
+.forgot {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+
+.login-form .btn.btn-primary.reset {
+  background: #ff9900 none repeat scroll 0 0;
+}
+
+.back {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.back a {
+  color: #444444;
+  font-size: 13px;
+  text-decoration: none;
+}

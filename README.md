@@ -43,3 +43,8 @@ npm run serve
 ``` 
 http://localhost:8080/
 ```
+
+![Home page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/home.jpg "Home page Screenshot")
+
+
+![Home page Screenshot](https://imgur.com/a/xedXRgv "Home page Screenshot")

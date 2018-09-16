@@ -44,7 +44,18 @@ npm run serve
 http://localhost:8080/
 ```
 
+## Home page Screenshot
+
 ![Home page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/home.jpg "Home page Screenshot")
 
+## Registration page Screenshot
 
-![Home page Screenshot](https://imgur.com/a/xedXRgv "Home page Screenshot")
+![Registration page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/registration.jpg "Registration page Screenshot")
+
+## Course Preview page Screenshot
+
+![Course Preview page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/course.png.jpg "Course Preview page Screenshot")
+
+## Lesson Preview page Screenshot
+
+![Lesson Preview page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/lesson.png.jpg "Lesson Preview page Screenshot")

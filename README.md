@@ -54,8 +54,8 @@ http://localhost:8080/
 
 ## Course Preview page Screenshot
 
-![Course Preview page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/course.png.jpg "Course Preview page Screenshot")
+![Course Preview page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/course.png "Course Preview page Screenshot")
 
 ## Lesson Preview page Screenshot
 
-![Lesson Preview page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/lesson.png.jpg "Lesson Preview page Screenshot")
+![Lesson Preview page Screenshot](https://github.com/almamuncsit/web-courses-vue/blob/master/src/assets/screenshot/lesson.png "Lesson Preview page Screenshot")

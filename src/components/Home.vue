@@ -1,7 +1,7 @@
 <template>
 <div>
 
-  <!-- header #1 -->
+  
   <header class="header" id="header1">
   	<div class="center">
   		<div class="caption">
@@ -9,14 +9,14 @@
   			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
         <router-link class="action btn btn-success" :to="{ name: 'login'}">Login</router-link>
         <router-link class="action btn btn-warning" :to="{ name: 'register'}">Register</router-link>
-  		</div>	
+  	  </div>	
   	</div>
-  	<!-- scroll-down -->
+  	
     <a href="#course-area">
       <i class="scroll fa fa-angle-double-down"></i>
     </a>
   </header>
-
+  
   <div class="container course-area" id="course-area">
      <course-list></course-list>
      <social-media></social-media>

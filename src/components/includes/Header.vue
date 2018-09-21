@@ -21,17 +21,17 @@
                 <ul class="navbar-nav mr-right">
 
                     
-                    <router-link tag="li" class="nav-link" :to="{ name: 'login'}" v-if="!isAuth">
+                    <router-link tag="li" class="nav-link" :to="{ name: 'login'}" v-if="!isLogin">
                         <a class="nav-link"> Login </a>
                     </router-link>
                     
-                    <router-link class="nav-link" :to="{ name: 'register'}" v-if="!isAuth">
+                    <router-link class="nav-link" :to="{ name: 'register'}" v-if="!isLogin">
                         <a class="nav-link">Register </a>
                     </router-link>
                     
-                    <router-link class="nav-link" :to="{ name: 'register'}">
-                        <a class="nav-link">Logout </a>
-                    </router-link>
+
+                    <a class="nav-link" href="javascript:void(0)" @click="logOut" v-if="isLogin" >Logout </a>
+                    
 
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,6 +59,9 @@
 </template>
 
 <script>
+
+import { mapState, mapMutations } from 'vuex'
+
 export default {
 
   data() {
@@ -67,8 +70,26 @@ export default {
     };
   },
 
+  computed: {
+      ...mapState([
+          'isLogin'
+      ])
+  },
+
   created() {
-    this.isAuth = this.$auth.isAutheticated();
+    this.setLogin(this.$auth.isAutheticated());
+  },
+
+  methods: {
+    ...mapMutations([
+        'setLogin'
+    ]),
+
+    logOut() {
+        this.$auth.destroyToken();
+        this.setLogin(false);
+        this.$router.push('/');
+    }
   }
 
 };

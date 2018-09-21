@@ -1,6 +1,6 @@
 # Web Courses Vue Client
 
-This is a Vue js application for online course. 
+A VueJs small application for mange client of Online courses. This application is developed using Vue Router, Vuex, Vue Resource packages with Vue.  
 
 [![GitHub Fork](https://img.shields.io/github/forks/almamuncsit/web-courses-vue.svg)](https://github.com/almamuncsit/web-courses-vue)
 [![GitHub Stars](https://img.shields.io/github/stars/almamuncsit/web-courses-vue.svg)](https://github.com/almamuncsit/web-courses-vue/stargazers)

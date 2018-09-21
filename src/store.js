@@ -4,13 +4,20 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  
   state: {
-    asset_url: 'http://localhost/me/webCourse/public'
+    asset_url: 'http://localhost/me/webCourse/public',
+    isLogin: false
   },
-  mutations: {
 
+  mutations: {
+    setLogin(state, isLogin) {
+      state.isLogin = isLogin;
+    },
   },
+
   actions: {
 
   }
+
 })

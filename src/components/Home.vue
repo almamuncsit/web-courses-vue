@@ -7,8 +7,8 @@
   		<div class="caption">
   			<h2 class="title display-3">Header title</h2>
   			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
-        <router-link class="action btn btn-success" :to="{ name: 'login'}">Login</router-link>
-        <router-link class="action btn btn-warning" :to="{ name: 'register'}">Register</router-link>
+        <router-link class="action btn btn-success" :to="{ name: 'login'}"  v-if="!isLogin">Login</router-link>
+        <router-link class="action btn btn-warning" :to="{ name: 'register'}"  v-if="!isLogin">Register</router-link>
   	  </div>	
   	</div>
   	
@@ -26,12 +26,20 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex'
 import CourseList from './courses/CourseList.vue'
 import SocialMedia from './includes/SocialMedia.vue'
 export default {
   components: {
     'course-list': CourseList,
     'social-media': SocialMedia
+  },
+
+  computed: {
+    ...mapState([
+      'isLogin'
+    ])
   },
 
   data() {

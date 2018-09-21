@@ -28,14 +28,29 @@
 
 
 <script>
+
+import { mapState, mapMutations } from 'vuex'
+
 export default {
+    
     data() {
         return {
             email: '',
             password: ''
         }
     },
+
+    computed: {
+        ...mapState([
+            'isLogin'
+        ])
+    },
+
     methods: {
+        ...mapMutations([
+            'setLogin'
+        ]),
+
         login: function () {
             var data = {
                 client_id: 2,
@@ -47,6 +62,7 @@ export default {
             this.$http.post("oauth/token", data)
             .then(response => {
                 this.$auth.setToken(response.body.access_token, response.body.expires_in + Date.now());
+                this.setLogin(true);
                 this.$router.push('/');
             })
         }
